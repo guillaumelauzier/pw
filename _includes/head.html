@@ -16,6 +16,17 @@
 
     <link rel="stylesheet" href="{{ href }}">
   {% endfor %}
+  
+  <!-- Static CSS fallback for when Jekyll is not processing -->
+  {% unless site.data.assets %}
+  <link rel="stylesheet" href="/assets/css/foundation.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/patch.css">
+  <link rel="stylesheet" href="/assets/css/fontello.css">
+  <link rel="stylesheet" href="/assets/css/font-awesome.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700,300">
+  {% endunless %}
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">

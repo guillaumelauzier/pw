@@ -1,0 +1,103 @@
+# Theme CSS Loading Quick Fix
+# 
+# If you're seeing this file, it means you're viewing the raw Jekyll source
+# instead of the built site. This Wrap theme requires Jekyll processing to work correctly.
+#
+# SOLUTIONS:
+#
+# 1. GITHUB PAGES (Recommended):
+#    - Go to your repository Settings
+#    - Enable GitHub Pages from the main branch
+#    - Your site will be automatically built and deployed
+#
+# 2. BUILD LOCALLY:
+#    - Run: jekyll build
+#    - Upload the _site folder contents to your web server
+#
+# 3. QUICK PREVIEW:
+#    - Visit: index_static.html to see a working version of the theme
+#
+# For full instructions, see README.md
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Theme Setup Required</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #edb713; }
+        .button {
+            display: inline-block;
+            background: #edb713;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 10px 10px 10px 0;
+        }
+        .code {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            margin: 10px 0;
+        }
+    </style>
+    <script>
+        // Auto-redirect to static version after 5 seconds
+        setTimeout(function() {
+            if (confirm('Would you like to see a preview of how the theme should look?')) {
+                window.location.href = 'index_static.html';
+            }
+        }, 3000);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>🚨 Wrap Theme Setup Required</h1>
+        
+        <p>You're seeing this page because the Jekyll site hasn't been built yet. The Wrap theme requires Jekyll processing to load CSS and display correctly.</p>
+        
+        <h3>Quick Solutions:</h3>
+        
+        <p><strong>1. GitHub Pages (Easiest):</strong></p>
+        <ul>
+            <li>Go to your repository Settings</li>
+            <li>Enable GitHub Pages from the main branch</li>
+            <li>Wait for GitHub to build your site</li>
+        </ul>
+        
+        <p><strong>2. Preview the theme now:</strong></p>
+        <a href="index_static.html" class="button">View Theme Preview</a>
+        
+        <p><strong>3. Build locally:</strong></p>
+        <div class="code">
+            gem install jekyll bundler<br>
+            bundle install<br>
+            jekyll build
+        </div>
+        
+        <p><strong>4. Quick deploy script:</strong></p>
+        <div class="code">./deploy.sh</div>
+        
+        <hr>
+        
+        <p><a href="README.md">📖 Full Setup Instructions</a></p>
+        
+        <p><em>You'll be redirected to the theme preview in a few seconds...</em></p>
+    </div>
+</body>
+</html>
