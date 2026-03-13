@@ -16,7 +16,7 @@
 title: Your Site Title
 description: A description of your site
 baseurl: "/pw" # The subpath of your site
-url: "https://guillaumelauzier.github.io" # The base hostname
+url: "" # The base hostname
 theme: minima
 
 # This is the place to set up the contact form recipient
